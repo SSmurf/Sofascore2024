@@ -6,23 +6,34 @@
 //
 
 import Foundation
+import UIKit
 
 class EventViewModel {
-    // MARK: - Properties
-    private let event: Event
+    private let event: EventModel
     private let dateFormatter: DateFormatter
     
-    // MARK: - Computed Properties for View Presentation
-    var matchTime: String {
-        return dateFormatter.string(from: event.startTime)
+    var startTime: String {
+        dateFormatter.string(from: event.startTime)
+    }
+    
+    var liveTime: Int? {
+        event.liveTime
     }
     
     var homeTeam: String {
-        return event.homeTeam
+        event.homeTeam
     }
     
     var awayTeam: String {
-        return event.awayTeam
+        event.awayTeam
+    }
+    
+    var homeTeamImage: UIImage? {
+        UIImage(named: event.homeTeamImageName)
+    }
+    
+    var awayTeamImage: UIImage? {
+        UIImage(named: event.awayTeamImageName)
     }
     
     var homeScore: String {
@@ -35,19 +46,26 @@ class EventViewModel {
         return String(score)
     }
     
+    var eventStatus: EventStatus {
+        event.eventStatus
+    }
+    
     var matchStatusText: String {
         switch event.eventStatus {
         case .notStarted:
-            return "Not Started"
+            return "-"
         case .inProgress:
-            return "In Progress"
+            if let liveTime = liveTime {
+                return "\(liveTime)'"
+            } else {
+                return "Live"
+            }
         case .finished:
-            return "Finished"
+            return "FT"
         }
     }
     
-    // MARK: - Initialization
-    init(event: Event) {
+    init(event: EventModel) {
         self.event = event
         self.dateFormatter = DateFormatter()
         self.dateFormatter.dateFormat = "HH:mm"

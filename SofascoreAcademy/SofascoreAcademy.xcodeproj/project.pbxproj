@@ -9,21 +9,80 @@
 /* Begin PBXBuildFile section */
 		5016F03C2B99BC7B0012DE0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016F03B2B99BC7B0012DE0B /* AppDelegate.swift */; };
 		5016F03E2B99BC7B0012DE0B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016F03D2B99BC7B0012DE0B /* SceneDelegate.swift */; };
-		5016F0402B99BC7B0012DE0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5016F03F2B99BC7B0012DE0B /* ViewController.swift */; };
-		5016F0432B99BC7B0012DE0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5016F0412B99BC7B0012DE0B /* Main.storyboard */; };
 		5016F0452B99BC7C0012DE0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5016F0442B99BC7C0012DE0B /* Assets.xcassets */; };
 		5016F0482B99BC7C0012DE0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5016F0462B99BC7C0012DE0B /* LaunchScreen.storyboard */; };
+		5073DB6E2BA07DCF005A456B /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073DB6D2BA07DCF005A456B /* EventModel.swift */; };
+		5073DB702BA07E6E005A456B /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073DB6F2BA07E6E005A456B /* LeagueModel.swift */; };
+		5073DB722BA07FDA005A456B /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073DB712BA07FDA005A456B /* EventViewModel.swift */; };
+		5073DB742BA0806F005A456B /* LeagueViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073DB732BA0806F005A456B /* LeagueViewModel.swift */; };
+		5073DB762BA08323005A456B /* LeagueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073DB752BA08323005A456B /* LeagueView.swift */; };
+		5073DB792BA2DB23005A456B /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073DB782BA2DB23005A456B /* EventView.swift */; };
+		5073DB7C2BA2E1F8005A456B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073DB7B2BA2E1F8005A456B /* MainViewController.swift */; };
+		5073DB812BA30F8A005A456B /* SofaAcademic in Frameworks */ = {isa = PBXBuildFile; productRef = 5073DB802BA30F8A005A456B /* SofaAcademic */; };
+		5073DB832BA3247A005A456B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073DB822BA3247A005A456B /* Colors.swift */; };
+		5073DB852BA324AE005A456B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073DB842BA324AE005A456B /* Fonts.swift */; };
+		5073DBC12BA7AB83005A456B /* Apache License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBAD2BA7AB83005A456B /* Apache License.txt */; };
+		5073DBC22BA7AB83005A456B /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBAE2BA7AB83005A456B /* Roboto-Black.ttf */; };
+		5073DBC32BA7AB83005A456B /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBAF2BA7AB83005A456B /* Roboto-BlackItalic.ttf */; };
+		5073DBC42BA7AB83005A456B /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBB02BA7AB83005A456B /* Roboto-Bold.ttf */; };
+		5073DBC52BA7AB83005A456B /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBB12BA7AB83005A456B /* Roboto-BoldItalic.ttf */; };
+		5073DBC62BA7AB83005A456B /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBB22BA7AB83005A456B /* Roboto-Italic.ttf */; };
+		5073DBC72BA7AB83005A456B /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBB32BA7AB83005A456B /* Roboto-Light.ttf */; };
+		5073DBC82BA7AB83005A456B /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBB42BA7AB83005A456B /* Roboto-LightItalic.ttf */; };
+		5073DBC92BA7AB83005A456B /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBB52BA7AB83005A456B /* Roboto-Medium.ttf */; };
+		5073DBCA2BA7AB83005A456B /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBB62BA7AB83005A456B /* Roboto-MediumItalic.ttf */; };
+		5073DBCB2BA7AB83005A456B /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBB72BA7AB83005A456B /* Roboto-Regular.ttf */; };
+		5073DBCC2BA7AB83005A456B /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBB82BA7AB83005A456B /* Roboto-Thin.ttf */; };
+		5073DBCD2BA7AB83005A456B /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBB92BA7AB83005A456B /* Roboto-ThinItalic.ttf */; };
+		5073DBCE2BA7AB83005A456B /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBBA2BA7AB83005A456B /* RobotoCondensed-Bold.ttf */; };
+		5073DBCF2BA7AB83005A456B /* RobotoCondensed-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBBB2BA7AB83005A456B /* RobotoCondensed-BoldItalic.ttf */; };
+		5073DBD02BA7AB83005A456B /* RobotoCondensed-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBBC2BA7AB83005A456B /* RobotoCondensed-Italic.ttf */; };
+		5073DBD12BA7AB83005A456B /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBBD2BA7AB83005A456B /* RobotoCondensed-Light.ttf */; };
+		5073DBD22BA7AB83005A456B /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBBE2BA7AB83005A456B /* RobotoCondensed-LightItalic.ttf */; };
+		5073DBD32BA7AB83005A456B /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBBF2BA7AB83005A456B /* RobotoCondensed-Regular.ttf */; };
+		5073DBD52BA7AC20005A456B /* LeagueEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073DBD42BA7AC20005A456B /* LeagueEventsView.swift */; };
+		BF81A2C82E789CF8A0EE5255 /* Pods_SofascoreAcademy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6656FAF216B9434A48E9B980 /* Pods_SofascoreAcademy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3505B451D950583884F2E600 /* Pods-SofascoreAcademy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofascoreAcademy.debug.xcconfig"; path = "Target Support Files/Pods-SofascoreAcademy/Pods-SofascoreAcademy.debug.xcconfig"; sourceTree = "<group>"; };
 		5016F0382B99BC7B0012DE0B /* SofascoreAcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SofascoreAcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5016F03B2B99BC7B0012DE0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5016F03D2B99BC7B0012DE0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5016F03F2B99BC7B0012DE0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5016F0422B99BC7B0012DE0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5016F0442B99BC7C0012DE0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5016F0472B99BC7C0012DE0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5016F0492B99BC7C0012DE0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5073DB6D2BA07DCF005A456B /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
+		5073DB6F2BA07E6E005A456B /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
+		5073DB712BA07FDA005A456B /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		5073DB732BA0806F005A456B /* LeagueViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueViewModel.swift; sourceTree = "<group>"; };
+		5073DB752BA08323005A456B /* LeagueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueView.swift; sourceTree = "<group>"; };
+		5073DB782BA2DB23005A456B /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		5073DB7B2BA2E1F8005A456B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5073DB822BA3247A005A456B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5073DB842BA324AE005A456B /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		5073DBAD2BA7AB83005A456B /* Apache License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Apache License.txt"; sourceTree = "<group>"; };
+		5073DBAE2BA7AB83005A456B /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		5073DBAF2BA7AB83005A456B /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		5073DBB02BA7AB83005A456B /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		5073DBB12BA7AB83005A456B /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		5073DBB22BA7AB83005A456B /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		5073DBB32BA7AB83005A456B /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		5073DBB42BA7AB83005A456B /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		5073DBB52BA7AB83005A456B /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		5073DBB62BA7AB83005A456B /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		5073DBB72BA7AB83005A456B /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		5073DBB82BA7AB83005A456B /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		5073DBB92BA7AB83005A456B /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		5073DBBA2BA7AB83005A456B /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		5073DBBB2BA7AB83005A456B /* RobotoCondensed-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-BoldItalic.ttf"; sourceTree = "<group>"; };
+		5073DBBC2BA7AB83005A456B /* RobotoCondensed-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Italic.ttf"; sourceTree = "<group>"; };
+		5073DBBD2BA7AB83005A456B /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		5073DBBE2BA7AB83005A456B /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
+		5073DBBF2BA7AB83005A456B /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		5073DBD42BA7AC20005A456B /* LeagueEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueEventsView.swift; sourceTree = "<group>"; };
+		6656FAF216B9434A48E9B980 /* Pods_SofascoreAcademy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SofascoreAcademy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72C55E9DC1AB8DAD69B02033 /* Pods-SofascoreAcademy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofascoreAcademy.release.xcconfig"; path = "Target Support Files/Pods-SofascoreAcademy/Pods-SofascoreAcademy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +90,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5073DB812BA30F8A005A456B /* SofaAcademic in Frameworks */,
+				BF81A2C82E789CF8A0EE5255 /* Pods_SofascoreAcademy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		357688C9B7F570A67CC9B6BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6656FAF216B9434A48E9B980 /* Pods_SofascoreAcademy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5016F02F2B99BC7B0012DE0B = {
 			isa = PBXGroup;
 			children = (
 				5016F03A2B99BC7B0012DE0B /* SofascoreAcademy */,
 				5016F0392B99BC7B0012DE0B /* Products */,
+				D40DFEB08E70EDF477360E5E /* Pods */,
+				357688C9B7F570A67CC9B6BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +127,100 @@
 		5016F03A2B99BC7B0012DE0B /* SofascoreAcademy */ = {
 			isa = PBXGroup;
 			children = (
+				5073DB682BA07CF3005A456B /* Model */,
+				5073DB6A2BA07D15005A456B /* ViewModel */,
+				5073DB692BA07D05005A456B /* View */,
+				5073DB6B2BA07D1D005A456B /* Controller */,
+				5073DB6C2BA07D23005A456B /* Resources */,
 				5016F03B2B99BC7B0012DE0B /* AppDelegate.swift */,
 				5016F03D2B99BC7B0012DE0B /* SceneDelegate.swift */,
-				5016F03F2B99BC7B0012DE0B /* ViewController.swift */,
-				5016F0412B99BC7B0012DE0B /* Main.storyboard */,
 				5016F0442B99BC7C0012DE0B /* Assets.xcassets */,
 				5016F0462B99BC7C0012DE0B /* LaunchScreen.storyboard */,
 				5016F0492B99BC7C0012DE0B /* Info.plist */,
 			);
 			path = SofascoreAcademy;
+			sourceTree = "<group>";
+		};
+		5073DB682BA07CF3005A456B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5073DB6D2BA07DCF005A456B /* EventModel.swift */,
+				5073DB6F2BA07E6E005A456B /* LeagueModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5073DB692BA07D05005A456B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5073DB752BA08323005A456B /* LeagueView.swift */,
+				5073DB782BA2DB23005A456B /* EventView.swift */,
+				5073DBD42BA7AC20005A456B /* LeagueEventsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5073DB6A2BA07D15005A456B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5073DB712BA07FDA005A456B /* EventViewModel.swift */,
+				5073DB732BA0806F005A456B /* LeagueViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5073DB6B2BA07D1D005A456B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5073DB7B2BA2E1F8005A456B /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5073DB6C2BA07D23005A456B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5073DB822BA3247A005A456B /* Colors.swift */,
+				5073DB842BA324AE005A456B /* Fonts.swift */,
+				5073DBC02BA7AB83005A456B /* roboto */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5073DBC02BA7AB83005A456B /* roboto */ = {
+			isa = PBXGroup;
+			children = (
+				5073DBAD2BA7AB83005A456B /* Apache License.txt */,
+				5073DBAE2BA7AB83005A456B /* Roboto-Black.ttf */,
+				5073DBAF2BA7AB83005A456B /* Roboto-BlackItalic.ttf */,
+				5073DBB02BA7AB83005A456B /* Roboto-Bold.ttf */,
+				5073DBB12BA7AB83005A456B /* Roboto-BoldItalic.ttf */,
+				5073DBB22BA7AB83005A456B /* Roboto-Italic.ttf */,
+				5073DBB32BA7AB83005A456B /* Roboto-Light.ttf */,
+				5073DBB42BA7AB83005A456B /* Roboto-LightItalic.ttf */,
+				5073DBB52BA7AB83005A456B /* Roboto-Medium.ttf */,
+				5073DBB62BA7AB83005A456B /* Roboto-MediumItalic.ttf */,
+				5073DBB72BA7AB83005A456B /* Roboto-Regular.ttf */,
+				5073DBB82BA7AB83005A456B /* Roboto-Thin.ttf */,
+				5073DBB92BA7AB83005A456B /* Roboto-ThinItalic.ttf */,
+				5073DBBA2BA7AB83005A456B /* RobotoCondensed-Bold.ttf */,
+				5073DBBB2BA7AB83005A456B /* RobotoCondensed-BoldItalic.ttf */,
+				5073DBBC2BA7AB83005A456B /* RobotoCondensed-Italic.ttf */,
+				5073DBBD2BA7AB83005A456B /* RobotoCondensed-Light.ttf */,
+				5073DBBE2BA7AB83005A456B /* RobotoCondensed-LightItalic.ttf */,
+				5073DBBF2BA7AB83005A456B /* RobotoCondensed-Regular.ttf */,
+			);
+			name = roboto;
+			path = ../../../../../Downloads/roboto;
+			sourceTree = "<group>";
+		};
+		D40DFEB08E70EDF477360E5E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3505B451D950583884F2E600 /* Pods-SofascoreAcademy.debug.xcconfig */,
+				72C55E9DC1AB8DAD69B02033 /* Pods-SofascoreAcademy.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +230,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5016F04C2B99BC7C0012DE0B /* Build configuration list for PBXNativeTarget "SofascoreAcademy" */;
 			buildPhases = (
+				EA5C21C3E08E492834A79F54 /* [CP] Check Pods Manifest.lock */,
 				5016F0342B99BC7B0012DE0B /* Sources */,
 				5016F0352B99BC7B0012DE0B /* Frameworks */,
 				5016F0362B99BC7B0012DE0B /* Resources */,
+				BBB727CA6B2772CABB53CC33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SofascoreAcademy;
+			packageProductDependencies = (
+				5073DB802BA30F8A005A456B /* SofaAcademic */,
+			);
 			productName = SofascoreAcademy;
 			productReference = 5016F0382B99BC7B0012DE0B /* SofascoreAcademy.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +272,9 @@
 				Base,
 			);
 			mainGroup = 5016F02F2B99BC7B0012DE0B;
+			packageReferences = (
+				5073DB7F2BA30F8A005A456B /* XCRemoteSwiftPackageReference "academy" */,
+			);
 			productRefGroup = 5016F0392B99BC7B0012DE0B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,36 +289,97 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5073DBCD2BA7AB83005A456B /* Roboto-ThinItalic.ttf in Resources */,
+				5073DBCC2BA7AB83005A456B /* Roboto-Thin.ttf in Resources */,
+				5073DBD22BA7AB83005A456B /* RobotoCondensed-LightItalic.ttf in Resources */,
 				5016F0482B99BC7C0012DE0B /* LaunchScreen.storyboard in Resources */,
+				5073DBC12BA7AB83005A456B /* Apache License.txt in Resources */,
+				5073DBCF2BA7AB83005A456B /* RobotoCondensed-BoldItalic.ttf in Resources */,
+				5073DBD02BA7AB83005A456B /* RobotoCondensed-Italic.ttf in Resources */,
+				5073DBC82BA7AB83005A456B /* Roboto-LightItalic.ttf in Resources */,
+				5073DBC42BA7AB83005A456B /* Roboto-Bold.ttf in Resources */,
+				5073DBD32BA7AB83005A456B /* RobotoCondensed-Regular.ttf in Resources */,
+				5073DBD12BA7AB83005A456B /* RobotoCondensed-Light.ttf in Resources */,
+				5073DBCA2BA7AB83005A456B /* Roboto-MediumItalic.ttf in Resources */,
+				5073DBC32BA7AB83005A456B /* Roboto-BlackItalic.ttf in Resources */,
 				5016F0452B99BC7C0012DE0B /* Assets.xcassets in Resources */,
-				5016F0432B99BC7B0012DE0B /* Main.storyboard in Resources */,
+				5073DBC62BA7AB83005A456B /* Roboto-Italic.ttf in Resources */,
+				5073DBCE2BA7AB83005A456B /* RobotoCondensed-Bold.ttf in Resources */,
+				5073DBC52BA7AB83005A456B /* Roboto-BoldItalic.ttf in Resources */,
+				5073DBC92BA7AB83005A456B /* Roboto-Medium.ttf in Resources */,
+				5073DBCB2BA7AB83005A456B /* Roboto-Regular.ttf in Resources */,
+				5073DBC22BA7AB83005A456B /* Roboto-Black.ttf in Resources */,
+				5073DBC72BA7AB83005A456B /* Roboto-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BBB727CA6B2772CABB53CC33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SofascoreAcademy/Pods-SofascoreAcademy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SofascoreAcademy/Pods-SofascoreAcademy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SofascoreAcademy/Pods-SofascoreAcademy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA5C21C3E08E492834A79F54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SofascoreAcademy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5016F0342B99BC7B0012DE0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5016F0402B99BC7B0012DE0B /* ViewController.swift in Sources */,
+				5073DB762BA08323005A456B /* LeagueView.swift in Sources */,
+				5073DB832BA3247A005A456B /* Colors.swift in Sources */,
+				5073DB722BA07FDA005A456B /* EventViewModel.swift in Sources */,
+				5073DB792BA2DB23005A456B /* EventView.swift in Sources */,
+				5073DBD52BA7AC20005A456B /* LeagueEventsView.swift in Sources */,
+				5073DB6E2BA07DCF005A456B /* EventModel.swift in Sources */,
 				5016F03C2B99BC7B0012DE0B /* AppDelegate.swift in Sources */,
+				5073DB742BA0806F005A456B /* LeagueViewModel.swift in Sources */,
 				5016F03E2B99BC7B0012DE0B /* SceneDelegate.swift in Sources */,
+				5073DB852BA324AE005A456B /* Fonts.swift in Sources */,
+				5073DB702BA07E6E005A456B /* LeagueModel.swift in Sources */,
+				5073DB7C2BA2E1F8005A456B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5016F0412B99BC7B0012DE0B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5016F0422B99BC7B0012DE0B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5016F0462B99BC7C0012DE0B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,16 +512,18 @@
 		};
 		5016F04D2B99BC7C0012DE0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3505B451D950583884F2E600 /* Pods-SofascoreAcademy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2V383ZXB5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SofascoreAcademy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +531,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Sofascore.SofascoreAcademy;
+				PRODUCT_BUNDLE_IDENTIFIER = PomperAnton.SofascoreAcademy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -314,16 +541,18 @@
 		};
 		5016F04E2B99BC7C0012DE0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72C55E9DC1AB8DAD69B02033 /* Pods-SofascoreAcademy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U2V383ZXB5;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SofascoreAcademy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -331,7 +560,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Sofascore.SofascoreAcademy;
+				PRODUCT_BUNDLE_IDENTIFIER = PomperAnton.SofascoreAcademy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -361,6 +590,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5073DB7F2BA30F8A005A456B /* XCRemoteSwiftPackageReference "academy" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sofascore/academy";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5073DB802BA30F8A005A456B /* SofaAcademic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5073DB7F2BA30F8A005A456B /* XCRemoteSwiftPackageReference "academy" */;
+			productName = SofaAcademic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5016F0302B99BC7B0012DE0B /* Project object */;
 }

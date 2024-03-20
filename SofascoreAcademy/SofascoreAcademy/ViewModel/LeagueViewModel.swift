@@ -8,23 +8,24 @@
 import UIKit
 
 class LeagueViewModel {
-    // MARK: - Properties
     private let league: LeagueModel
     
-    // MARK: - Computed Properties for View Presentation
     var image: UIImage? {
-        return UIImage(named: league.imageName)
+        UIImage(named: league.imageName)
+    }
+    
+    var pointerImage: UIImage? {
+        UIImage(named: "ic-pointer-right")
     }
     
     var country: String {
-        return league.country
+        league.country
     }
     
     var leagueName: String {
-        return league.leagueName
+        league.leagueName
     }
     
-    // MARK: - Initialization
     init(league: LeagueModel) {
         self.league = league
     }
