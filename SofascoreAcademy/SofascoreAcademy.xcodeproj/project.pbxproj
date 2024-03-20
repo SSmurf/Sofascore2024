@@ -41,7 +41,8 @@
 		5073DBD22BA7AB83005A456B /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBBE2BA7AB83005A456B /* RobotoCondensed-LightItalic.ttf */; };
 		5073DBD32BA7AB83005A456B /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5073DBBF2BA7AB83005A456B /* RobotoCondensed-Regular.ttf */; };
 		5073DBD52BA7AC20005A456B /* LeagueEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073DBD42BA7AC20005A456B /* LeagueEventsView.swift */; };
-		BF81A2C82E789CF8A0EE5255 /* Pods_SofascoreAcademy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6656FAF216B9434A48E9B980 /* Pods_SofascoreAcademy.framework */; };
+		5073DBD82BAAE2EC005A456B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5073DBD72BAAE2EC005A456B /* SnapKit */; };
+		5073DBDA2BAAE2EC005A456B /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 5073DBD92BAAE2EC005A456B /* SnapKit-Dynamic */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,7 +81,6 @@
 		5073DBBE2BA7AB83005A456B /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
 		5073DBBF2BA7AB83005A456B /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		5073DBD42BA7AC20005A456B /* LeagueEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueEventsView.swift; sourceTree = "<group>"; };
-		6656FAF216B9434A48E9B980 /* Pods_SofascoreAcademy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SofascoreAcademy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5073DB812BA30F8A005A456B /* SofaAcademic in Frameworks */,
-				BF81A2C82E789CF8A0EE5255 /* Pods_SofascoreAcademy.framework in Frameworks */,
+				5073DBD82BAAE2EC005A456B /* SnapKit in Frameworks */,
+				5073DBDA2BAAE2EC005A456B /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +100,6 @@
 		357688C9B7F570A67CC9B6BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6656FAF216B9434A48E9B980 /* Pods_SofascoreAcademy.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,11 +218,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5016F04C2B99BC7C0012DE0B /* Build configuration list for PBXNativeTarget "SofascoreAcademy" */;
 			buildPhases = (
-				EA5C21C3E08E492834A79F54 /* [CP] Check Pods Manifest.lock */,
 				5016F0342B99BC7B0012DE0B /* Sources */,
 				5016F0352B99BC7B0012DE0B /* Frameworks */,
 				5016F0362B99BC7B0012DE0B /* Resources */,
-				BBB727CA6B2772CABB53CC33 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,6 +229,8 @@
 			name = SofascoreAcademy;
 			packageProductDependencies = (
 				5073DB802BA30F8A005A456B /* SofaAcademic */,
+				5073DBD72BAAE2EC005A456B /* SnapKit */,
+				5073DBD92BAAE2EC005A456B /* SnapKit-Dynamic */,
 			);
 			productName = SofascoreAcademy;
 			productReference = 5016F0382B99BC7B0012DE0B /* SofascoreAcademy.app */;
@@ -262,6 +262,7 @@
 			mainGroup = 5016F02F2B99BC7B0012DE0B;
 			packageReferences = (
 				5073DB7F2BA30F8A005A456B /* XCRemoteSwiftPackageReference "academy" */,
+				5073DBD62BAAE2EC005A456B /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 5016F0392B99BC7B0012DE0B /* Products */;
 			projectDirPath = "";
@@ -302,48 +303,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		BBB727CA6B2772CABB53CC33 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SofascoreAcademy/Pods-SofascoreAcademy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SofascoreAcademy/Pods-SofascoreAcademy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SofascoreAcademy/Pods-SofascoreAcademy-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EA5C21C3E08E492834A79F54 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SofascoreAcademy-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5016F0342B99BC7B0012DE0B /* Sources */ = {
@@ -586,6 +545,14 @@
 				kind = branch;
 			};
 		};
+		5073DBD62BAAE2EC005A456B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -593,6 +560,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5073DB7F2BA30F8A005A456B /* XCRemoteSwiftPackageReference "academy" */;
 			productName = SofaAcademic;
+		};
+		5073DBD72BAAE2EC005A456B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5073DBD62BAAE2EC005A456B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		5073DBD92BAAE2EC005A456B /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5073DBD62BAAE2EC005A456B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
