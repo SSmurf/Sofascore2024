@@ -45,7 +45,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3505B451D950583884F2E600 /* Pods-SofascoreAcademy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofascoreAcademy.debug.xcconfig"; path = "Target Support Files/Pods-SofascoreAcademy/Pods-SofascoreAcademy.debug.xcconfig"; sourceTree = "<group>"; };
 		5016F0382B99BC7B0012DE0B /* SofascoreAcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SofascoreAcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5016F03B2B99BC7B0012DE0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5016F03D2B99BC7B0012DE0B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,7 +81,6 @@
 		5073DBBF2BA7AB83005A456B /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		5073DBD42BA7AC20005A456B /* LeagueEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueEventsView.swift; sourceTree = "<group>"; };
 		6656FAF216B9434A48E9B980 /* Pods_SofascoreAcademy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SofascoreAcademy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		72C55E9DC1AB8DAD69B02033 /* Pods-SofascoreAcademy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofascoreAcademy.release.xcconfig"; path = "Target Support Files/Pods-SofascoreAcademy/Pods-SofascoreAcademy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +109,6 @@
 			children = (
 				5016F03A2B99BC7B0012DE0B /* SofascoreAcademy */,
 				5016F0392B99BC7B0012DE0B /* Products */,
-				D40DFEB08E70EDF477360E5E /* Pods */,
 				357688C9B7F570A67CC9B6BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -212,15 +209,6 @@
 			);
 			name = roboto;
 			path = ../../../../../Downloads/roboto;
-			sourceTree = "<group>";
-		};
-		D40DFEB08E70EDF477360E5E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3505B451D950583884F2E600 /* Pods-SofascoreAcademy.debug.xcconfig */,
-				72C55E9DC1AB8DAD69B02033 /* Pods-SofascoreAcademy.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,7 +500,6 @@
 		};
 		5016F04D2B99BC7C0012DE0B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3505B451D950583884F2E600 /* Pods-SofascoreAcademy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -541,7 +528,6 @@
 		};
 		5016F04E2B99BC7C0012DE0B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72C55E9DC1AB8DAD69B02033 /* Pods-SofascoreAcademy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
