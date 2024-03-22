@@ -32,7 +32,8 @@ class LeagueView: BaseView {
         leagueImageView.clipsToBounds = true
         
         countryLabel.textAlignment = .left
-        countryLabel.font = UIFont.headline3
+//        countryLabel.font = .headline3
+        countryLabel.font = countryLabel.font.withSize(14)
         countryLabel.textColor = UIColor.onSurfaceOnSurfaceLv1
         countryLabel.numberOfLines = 1
         
@@ -40,7 +41,8 @@ class LeagueView: BaseView {
         pointerImageView.clipsToBounds = true
         
         leagueNameLabel.textAlignment = .left
-        leagueNameLabel.font = UIFont.headline3
+//        leagueNameLabel.font = UIFont.headline3
+        leagueNameLabel.font = leagueNameLabel.font.withSize(14)
         leagueNameLabel.textColor = UIColor.onSurfaceOnSurfaceLv2
         leagueNameLabel.numberOfLines = 1
     }
@@ -49,26 +51,26 @@ class LeagueView: BaseView {
         super.setupConstraints()
         
         leagueImageView.snp.makeConstraints { make in
-            make.top.bottom.equalTo(self).inset(12)
-            make.left.equalTo(self).inset(16)
+            make.top.bottom.equalToSuperview().inset(12)
+            make.leading.equalToSuperview().inset(16)
             make.width.height.equalTo(32)
         }
         
         countryLabel.snp.makeConstraints { make in
             make.centerY.equalTo(leagueImageView)
-            make.left.equalTo(leagueImageView.snp.right).offset(32)
+            make.leading.equalTo(leagueImageView.snp.trailing).offset(32)
         }
         
         pointerImageView.snp.makeConstraints { make in
             make.centerY.equalTo(countryLabel)
-            make.left.equalTo(countryLabel.snp.right)
+            make.leading.equalTo(countryLabel.snp.trailing)
             make.width.height.equalTo(24)
         }
         
         leagueNameLabel.snp.makeConstraints { make in
             make.centerY.equalTo(pointerImageView)
-            make.left.equalTo(pointerImageView.snp.right)
-            make.right.lessThanOrEqualTo(self).inset(10)
+            make.leading.equalTo(pointerImageView.snp.trailing)
+            make.trailing.lessThanOrEqualToSuperview().inset(10)
         }
     }
     

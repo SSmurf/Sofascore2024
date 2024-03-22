@@ -35,11 +35,13 @@ class EventView: BaseView {
     
     override func styleViews(){
         timeLabel.textAlignment = .center
-        timeLabel.font = UIFont.micro
+//        timeLabel.font = UIFont.micro
+        timeLabel.font = timeLabel.font.withSize(12)
         timeLabel.textColor = UIColor.onSurfaceOnSurfaceLv2
         
         statusLabel.textAlignment = .center
-        statusLabel.font = UIFont.micro
+//        statusLabel.font = UIFont.micro
+        statusLabel.font = statusLabel.font.withSize(12)
         statusLabel.textColor = UIColor.onSurfaceOnSurfaceLv2
         
         verticalDivider.backgroundColor = UIColor.onSurfaceOnSurfaceLv4
@@ -51,21 +53,25 @@ class EventView: BaseView {
         awayTeamImage.clipsToBounds = true
         
         homeTeamLabel.textAlignment = .left
-        homeTeamLabel.font = UIFont.body
+//        homeTeamLabel.font = UIFont.body
+        homeTeamLabel.font = homeTeamLabel.font.withSize(14)
         homeTeamLabel.numberOfLines = 1
         homeTeamLabel.textColor = UIColor.onSurfaceOnSurfaceLv1
         
         awayTeamLabel.textAlignment = .left
-        awayTeamLabel.font = UIFont.body
+//        awayTeamLabel.font = UIFont.body
+        awayTeamLabel.font = awayTeamLabel.font.withSize(14)
         awayTeamLabel.numberOfLines = 1
         awayTeamLabel.textColor = UIColor.onSurfaceOnSurfaceLv1
         
         homeScoreLabel.textAlignment = .right
-        homeScoreLabel.font = UIFont.body
+//        homeScoreLabel.font = UIFont.body
+        homeScoreLabel.font = homeScoreLabel.font.withSize(14)
         homeScoreLabel.textColor = UIColor.onSurfaceOnSurfaceLv1
 
         awayScoreLabel.textAlignment = .right
-        awayScoreLabel.font = UIFont.body
+//        awayScoreLabel.font = UIFont.body
+        awayScoreLabel.font = awayScoreLabel.font.withSize(14)
         awayScoreLabel.textColor = UIColor.onSurfaceOnSurfaceLv1
     }
     
@@ -73,60 +79,60 @@ class EventView: BaseView {
         super.setupConstraints()
         
         timeLabel.snp.makeConstraints { make in
-            make.top.equalTo(self).offset(10)
-            make.left.equalTo(self).offset(4)
+            make.top.equalToSuperview().offset(10)
+            make.leading.equalToSuperview().offset(4)
             make.width.equalTo(56)
             make.height.equalTo(16)
         }
         
         statusLabel.snp.makeConstraints { make in
             make.top.equalTo(timeLabel.snp.bottom).offset(4)
-            make.left.equalTo(self).offset(4)
-            make.bottom.lessThanOrEqualTo(self).inset(10)
+            make.leading.equalToSuperview().offset(4)
+            make.bottom.lessThanOrEqualToSuperview().inset(10)
             make.width.equalTo(56)
             make.height.equalTo(16)
         }
         
         verticalDivider.snp.makeConstraints { make in
-            make.left.equalTo(self).offset(64)
-            make.top.equalTo(self).offset(8)
+            make.leading.equalToSuperview().offset(64)
+            make.top.equalToSuperview().offset(8)
+            make.bottom.equalToSuperview().inset(8)
             make.width.equalTo(1)
-            make.height.equalTo(40)
         }
         
         homeTeamImage.snp.makeConstraints() { make in
-            make.left.equalTo(verticalDivider.snp.right).offset(16)
-            make.top.equalTo(self).offset(10)
+            make.leading.equalTo(verticalDivider.snp.trailing).offset(16)
+            make.top.equalToSuperview().offset(10)
             make.width.height.equalTo(16)
         }
         
         awayTeamImage.snp.makeConstraints() { make in
-            make.left.equalTo(verticalDivider.snp.right).offset(16)
+            make.leading.equalTo(verticalDivider.snp.trailing).offset(16)
             make.top.equalTo(homeTeamImage.snp.bottom).offset(4)
             make.width.height.equalTo(16)
         }
         
         homeTeamLabel.snp.makeConstraints() { make in
-            make.left.equalTo(homeTeamImage.snp.right).offset(8)
-            make.top.equalTo(self).offset(10)
+            make.leading.equalTo(homeTeamImage.snp.trailing).offset(8)
+            make.top.equalToSuperview().offset(10)
             make.width.equalTo(192)
         }
         
         awayTeamLabel.snp.makeConstraints() { make in
-            make.left.equalTo(awayTeamImage.snp.right).offset(8)
+            make.leading.equalTo(awayTeamImage.snp.trailing).offset(8)
             make.top.equalTo(homeTeamImage.snp.bottom).offset(4)
             make.width.equalTo(192)
         }
         
         homeScoreLabel.snp.makeConstraints() { make in
-            make.top.equalTo(self).offset(10)
-            make.right.equalTo(self).inset(16)
+            make.top.equalToSuperview().offset(10)
+            make.trailing.equalToSuperview().inset(16)
             make.width.equalTo(32)
         }
         
         awayScoreLabel.snp.makeConstraints() { make in
             make.top.equalTo(homeScoreLabel.snp.bottom).offset(4)
-            make.right.equalTo(self).inset(16)
+            make.trailing.equalToSuperview().inset(16)
             make.width.equalTo(32)
         }
     }

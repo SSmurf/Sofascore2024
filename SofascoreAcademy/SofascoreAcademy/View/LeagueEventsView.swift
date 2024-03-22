@@ -11,50 +11,34 @@ import SofaAcademic
 
 class LeagueEventsView: BaseView {
     
-    private let leagueView = LeagueView()
-    private let eventsContainerView = UIView()
+    private let stackView = UIStackView()
     
     override func addViews() {
-        addSubview(leagueView)
-        addSubview(eventsContainerView)
+        stackView.axis = .vertical
+        stackView.distribution = .fill
+        stackView.alignment = .fill
+        stackView.spacing = 0
+        
+        addSubview(stackView)
     }
     
     override func setupConstraints() {
-        leagueView.snp.makeConstraints { make in
-            make.top.left.right.equalToSuperview()
-        }
-        
-        eventsContainerView.snp.makeConstraints { make in
-            make.top.equalTo(leagueView.snp.bottom)
-            make.left.right.equalToSuperview()
+        stackView.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.leading.trailing.equalToSuperview()
         }
     }
     
     func configure(with leagueViewModel: LeagueViewModel, events: [EventModel]) {
+        let leagueView = LeagueView()
         leagueView.configure(with: leagueViewModel)
         
-        var previousEventView: UIView? = nil
-        
+        stackView.addArrangedSubview(leagueView)
+              
         for event in events {
             let eventView = EventView()
             eventView.configure(with: EventViewModel(event: event))
-            eventsContainerView.addSubview(eventView)
-            
-            eventView.snp.makeConstraints { make in
-                make.left.right.equalToSuperview()
-                
-                if let previousEventView = previousEventView {
-                    make.top.equalTo(previousEventView.snp.bottom)
-                } else {
-                    make.top.equalToSuperview()
-                }
-            }
-            
-            previousEventView = eventView
-        }
-        
-        previousEventView?.snp.makeConstraints { make in
-              make.bottom.equalToSuperview()
+            stackView.addArrangedSubview(eventView)
         }
     }
 }
