@@ -23,6 +23,8 @@
 		5073DBD52BA7AC20005A456B /* LeagueEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5073DBD42BA7AC20005A456B /* LeagueEventsView.swift */; };
 		5073DBD82BAAE2EC005A456B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5073DBD72BAAE2EC005A456B /* SnapKit */; };
 		5073DBDA2BAAE2EC005A456B /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 5073DBD92BAAE2EC005A456B /* SnapKit-Dynamic */; };
+		5092F2AA2BB17EDB0041FF0D /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5092F2A92BB17EDB0041FF0D /* EventsViewController.swift */; };
+		5092F2AC2BB17EE60041FF0D /* EventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5092F2AB2BB17EE60041FF0D /* EventCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		5073DB7B2BA2E1F8005A456B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5073DB822BA3247A005A456B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		5073DBD42BA7AC20005A456B /* LeagueEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueEventsView.swift; sourceTree = "<group>"; };
+		5092F2A92BB17EDB0041FF0D /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		5092F2AB2BB17EE60041FF0D /* EventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 				5073DB752BA08323005A456B /* LeagueView.swift */,
 				5073DB782BA2DB23005A456B /* EventView.swift */,
 				5073DBD42BA7AC20005A456B /* LeagueEventsView.swift */,
+				5092F2AB2BB17EE60041FF0D /* EventCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				5073DB7B2BA2E1F8005A456B /* MainViewController.swift */,
+				5092F2A92BB17EDB0041FF0D /* EventsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -226,9 +232,11 @@
 				5073DB722BA07FDA005A456B /* EventViewModel.swift in Sources */,
 				5073DB792BA2DB23005A456B /* EventView.swift in Sources */,
 				5073DBD52BA7AC20005A456B /* LeagueEventsView.swift in Sources */,
+				5092F2AA2BB17EDB0041FF0D /* EventsViewController.swift in Sources */,
 				5073DB6E2BA07DCF005A456B /* EventModel.swift in Sources */,
 				5016F03C2B99BC7B0012DE0B /* AppDelegate.swift in Sources */,
 				5073DB742BA0806F005A456B /* LeagueViewModel.swift in Sources */,
+				5092F2AC2BB17EE60041FF0D /* EventCollectionViewCell.swift in Sources */,
 				5016F03E2B99BC7B0012DE0B /* SceneDelegate.swift in Sources */,
 				5073DB702BA07E6E005A456B /* LeagueModel.swift in Sources */,
 				5073DB7C2BA2E1F8005A456B /* MainViewController.swift in Sources */,
